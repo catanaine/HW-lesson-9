@@ -1,0 +1,252 @@
+:root {
+    margin: 0;
+    --font-size: 12px;
+    --bg-color:linear-gradient(45deg,  rgb(246, 246, 117), rgb(46, 204, 196), rgb(216, 137, 216));
+  
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Jacquarda+Bastarda+9&family=Noto+Sans+Warang+Citi&display=swap');
+
+body{
+    margin: 0;
+    font-family: "Noto Sans Warang Citi", sans-serif;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+   'header header'
+   'sidebar main';
+    gap: 10px;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100px calc(100vh - 100px);
+    
+    
+}
+.header{
+    grid-area: header;
+    color: transparent;
+    /* border: 1px dashed gray; */
+      
+}
+.bg{
+    background-image: var(--bg-color);
+    background-size: 300%;
+    background-position: left;
+    animation: head 3s infinite alternate;
+}
+@keyframes head {
+        0% {background-position: left}
+        100% {background-position: right}
+}    
+.sidebar{
+    grid-area: sidebar;
+    color: transparent;
+    width: 300px;
+    background: rgb(241, 236, 236);
+    
+}
+.main {
+    grid-area: main;
+    border: 1px solid black;
+}
+.navigare{
+    font-size: 2rem;
+    height: 60PX;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 60px;
+
+    
+}
+.navcolor {
+  text-decoration: none;
+  color: darkgreen;
+  font-weight: bold;
+}
+
+.navsidebar{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-transform: capitalize;
+    margin-top: 80px;
+    font-size: 2rem;
+   
+}
+
+.design1 {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+    height: 50px;
+    width: 120px;
+    color: darkgreen;
+
+    background-color: aqua;
+}
+.design1:hover {
+    background-color: rgb(46, 204, 196);
+}
+.design2 {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+    height: 50px;
+    width: 120px;
+    color: darkgreen;
+
+    background-image: var(--bg-color);
+    background-size: 400%;
+    background-position: left;
+    transition: background-position 2s;
+}
+.design2:hover {
+    background-position: right;
+}
+.design3 {
+    border: 1px solid transparent;
+    border-radius: 6px;
+    padding-top: 10px;
+    text-decoration: none;
+    text-align: center;
+    
+    height: 50px;
+    width: 120px;
+    color: darkgreen;
+
+    background-image: var(--bg-color);
+    background-size: 400%;
+    background-position: right;
+    transition: background-position 2s;
+}
+.design3:hover {
+    background-position: left;
+}
+
+.design4 {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    font-size: 24px;
+    font-weight: bolder;
+    /* text-align: center; */
+
+    background-image: var(--bg-color);
+    background-size: 400%;
+    background-position: left;
+    transition: background-position 1s;
+}
+
+ .design4:hover {
+    background-position: right;
+ }
+.design5 {
+    /* border: 1px solid black; */
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-image: var(--bg-color);
+    background-size: 400%;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    /* text-align: center; */
+    font-size: 24px;
+    font-weight: bolder;
+
+    animation: nav4 2s infinite alternate;
+}
+@keyframes nav4 {
+    0%{background-position: left;}
+
+    100%{background-position: right;}
+}
+
+.design5:hover{
+    background-image: -webkit-radial-gradient(rgb(183, 46, 204), rgb(246, 246, 117));
+   
+}
+
+.nav4-5 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 24px;
+    justify-content: space-between;
+}
+.titlu {
+    position: absolute;
+    top: 85px;
+    left: 700px;
+    text-transform: uppercase;
+    background-image: var(--bg-color);
+    background-clip: text;
+    color: transparent;
+}
+
+.block1 {
+    display: flex;
+    flex-direction: column;
+
+}
+.shrift {
+    margin: 32px 0 8px 0;
+    font-family: "Protest Guerrilla", sans-serif;
+    background-image: var(--bg-color);
+
+    border: 1px solid black;
+}
+.shrift1 {
+    background-color: aqua;
+
+
+}
+.shrift2 {
+    background-color: rgb(205, 205, 168);
+    text-transform: capitalize;
+    font-style: oblique;
+    font-size: 2rem;
+    margin: -8px 0;
+
+}
+.block2 {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px; 
+    
+    
+}
+.shrift3 {
+    border: 5px double gray;
+    text-align: center;
+    background-color: rgb(125, 201, 214);
+    color: rgb(52, 63, 29);
+
+}
+.shrift4 { 
+    font-family: "Noto Serif Old Uyghur", serif;
+    font-style: oblique;
+
+}
+.shrift5 {
+    font-family: "Dancing Script", cursive;
+    font-size: 20px;
+
+}
+.shrift6 {
+    font-family: "Noto Serif Old Uyghur", serif;
+
+}
